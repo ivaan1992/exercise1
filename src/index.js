@@ -63,8 +63,9 @@ function createTask(taskElement) {
 
   function deleteField() {
     task.remove(list, taskText, taskElement);
-    list.saveStorage();
+    list.saveStorage()
   }
+
 
   taskText.addEventListener('focusin', () => {
     divItem.classList.add('editing');

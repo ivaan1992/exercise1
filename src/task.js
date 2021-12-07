@@ -23,6 +23,6 @@ export function remove(list, taskText, taskElement) {
 }
 
 export function clear(list) {
-  list.list = list.list.filter((taskElement) => taskElement.completed === false);
+  list.list = list.list.filter((element) => element.completed === false);
   order(list);
 }
